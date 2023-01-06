@@ -2,6 +2,7 @@ import React from "react";
 import { urlFor } from "../sanity";
 import { motion } from "framer-motion";
 import { Experiance } from "../typings";
+import Image from "next/image";
 
 type Props = {
 	experiance: Experiance;
@@ -28,10 +29,13 @@ const ExperianceCard = ({ experiance }: Props) => {
 				<p className="font-bold text-2xl mt-1">{experiance.company}</p>
 				<div className="flex space-x-2 my-2">
 					{experiance.technologies.map((technology) => (
-						<img
+						<Image
 							key={technology._id}
-							className="h-10 w-10 rounded-full"
-							src={urlFor(technology.image).url()}
+							className="rounded-full"
+							src={urlFor(technology?.image).url()}
+							alt="TechnologyImage"
+							height={60}
+							width={60}
 						/>
 					))}
 				</div>
