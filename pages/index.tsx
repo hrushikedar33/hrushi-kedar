@@ -1,8 +1,8 @@
-import type { GetStaticProps, NextPage } from "next";
+import type { GetStaticProps } from "next";
 import Head from "next/head";
-import Link from "next/link";
 import About from "../components/About";
 import ContactMe from "../components/ContactMe";
+import Footer from "../components/Footer";
 
 import Header from "../components/Header";
 import Hero from "../components/Hero";
@@ -26,7 +26,7 @@ type Props = {
 
 const Home = ({ homePage, experiances, skills, projects, socials }: Props) => {
 	return (
-		<div className="flex flex-col min-h-screen bg-[rgb(36,36,36)] text-white">
+		<div className="flex flex-col min-h-screen">
 			<Head>
 				<title>Hrushikesh Kedar</title>
 			</Head>
@@ -65,6 +65,7 @@ const Home = ({ homePage, experiances, skills, projects, socials }: Props) => {
 					<ContactMe />
 				</section>
 			</div>
+			<Footer />
 		</div>
 	);
 };

@@ -1,7 +1,7 @@
 import React from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { motion } from "framer-motion";
-import { PhoneIcon, MapPinIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
+import { MapPinIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
 
 type Inputs = {
 	name: string;
@@ -27,38 +27,29 @@ const ContactMe = (props: Props) => {
 				opacity: 1,
 			}}
 			transition={{ duration: 1.5 }}
-			className="flex flex-col relative h-screen text-center md:text-left 
-            md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center"
+			className="flex flex-col min-h-screen text-center items-center justify-center mx-5 md:mx-20"
 		>
-			<h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+			<h3 className="uppercase tracking-[20px] text-gray-500 text-2xl">
 				Contact
 			</h3>
 
-			<div className="flex flex-col space-y-10 mt-10 lg:mt-16">
-				<h4 className="text-3xl font-semibold text-center">
-					Okay{" "}
-					<span className="underline decoration-[#F7AB0A]/50">
-						Lets Talk!
-					</span>{" "}
+			<div className="flex flex-col mt-10 lg:mt-16">
+				<h4 className="text-2xl font-semibold underline decoration-[#F7AB0A]/50">
+					Lets Talk!
 				</h4>
-				<div className="space-y-3">
-					<div className="flex items-center space-x-5 justify-center">
-						<PhoneIcon className="h-7 w-7 text-[#F7AB0A] animate-pulse" />
-						<p className="text-2xl">+91112221133</p>
-					</div>
-					<div className="flex items-center space-x-5 justify-center">
-						<EnvelopeIcon className="h-7 w-7 text-[#F7AB0A] animate-pulse" />
-						<p className="text-2xl">hrushikedar33@gmail.com</p>
-					</div>
-					<div className="flex items-center space-x-5 justify-center">
-						<MapPinIcon className="h-7 w-7 text-[#F7AB0A] animate-pulse" />
-						<p className="text-2xl">Pune, India</p>
-					</div>
+
+				<div className="flex items-center mt-5 space-x-5 justify-center">
+					<EnvelopeIcon className="h-7 w-7 text-[#F7AB0A] animate-pulse" />
+					<p className="text-lg">hrushikedar33@gmail.com</p>
+				</div>
+				<div className="flex items-center mt-2 mb-5 space-x-5 justify-center">
+					<MapPinIcon className="h-7 w-7 text-[#F7AB0A] animate-pulse" />
+					<p className="text-lg">Pune, India</p>
 				</div>
 
 				<form
 					onSubmit={handleSubmit(onSubmit)}
-					className="flex flex-col space-y-2 w-fit mx-auto"
+					className="flex flex-col space-y-3 w-fit mx-auto"
 				>
 					<div className="flex space-x-2">
 						<input
@@ -87,7 +78,7 @@ const ContactMe = (props: Props) => {
 					></textarea>
 					<button
 						type="submit"
-						className="py-5 px-10 bg-[#F7AB0A] rounded-md text-black font-bold text-lg"
+						className="py-3 px-10 bg-[#F7AB0A] rounded-md text-black font-bold text-lg"
 					>
 						Submit
 					</button>

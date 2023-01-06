@@ -18,30 +18,29 @@ const Hero = ({ homePage }: Props) => {
 	});
 
 	return (
-		<div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
-			<BackgroudCircles />
-
+		<div className="flex flex-col min-h-screen items-center justify-center text-center mx-5 md:mx-20">
+			{/* <BackgroudCircles /> */}
+			{/* //TODO: Add a background image */}
 			<Image
-				className="relative rounded-full h-32 w-32 mx-auto object-cover"
+				className="rounded-full object-cover"
 				src={urlFor(homePage?.heroImage).url()}
 				alt="HeroImage"
-				height={200}
-				width={200}
+				height={250}
+				width={250}
 			/>
-
-			<div className="z-20">
-				<h1 className="text-2xl lg:text-3xl font-semibold px-10 pb-2">
+			<div className="p-5 z-20">
+				<h1 className="mt-2 text-3xl uppercase md:text-5xl font-semibold tracking-wide">
 					{homePage.name}
 				</h1>
-				<h2 className="text-sm pb-2 uppercase text-gray-500 tracking-[15px]">
+				<h2 className="mt-2 text-lg uppercase text-gray-500 tracking-widest">
 					{/* TODO */}
 					Software Develper
 				</h2>
-				<h2 className="text-xl lg:text-2xl font-semibold px-10">
+				<h2 className="mt-6 text-lg md:text-xl font-semibold">
 					<span className="mr-3">{text}</span>
 					<Cursor />
 				</h2>
-				<div className="pt-5">
+				<div className="mt-5 mb-20 space-x-2">
 					<Link href="#about">
 						<button className="heroButton">About</button>
 					</Link>
