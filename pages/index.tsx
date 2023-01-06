@@ -26,7 +26,7 @@ type Props = {
 
 const Home = ({ homePage, experiances, skills, projects, socials }: Props) => {
 	return (
-		<div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
+		<div className="flex flex-col min-h-screen bg-[rgb(36,36,36)] text-white">
 			<Head>
 				<title>Hrushikesh Kedar</title>
 			</Head>
@@ -34,35 +34,37 @@ const Home = ({ homePage, experiances, skills, projects, socials }: Props) => {
 			{/* header //TODO: change it to layout in navbar */}
 			<Header socials={socials} />
 
-			{/* Hero */}
-			<section id="hero" className="snap-start">
-				<Hero homePage={homePage} />
-			</section>
+			<div className="flex-1">
+				{/* Hero */}
+				<section id="hero" className="snap-start">
+					<Hero homePage={homePage} />
+				</section>
 
-			{/* About */}
-			<section id="about" className="snap-center">
-				<About homePage={homePage} />
-			</section>
+				{/* About */}
+				<section id="about" className="snap-center">
+					<About homePage={homePage} />
+				</section>
 
-			{/* Experiance */}
-			<section id="experiance" className="snap-center">
-				<WorkExperiance expereinces={experiances} />
-			</section>
+				{/* Experiance */}
+				<section id="experiance" className="snap-center">
+					<WorkExperiance expereinces={experiances} />
+				</section>
 
-			{/* Skills */}
-			<section id="skills" className="snap-start">
-				<Skills skills={skills} />
-			</section>
+				{/* Skills */}
+				<section id="skills" className="snap-start">
+					<Skills skills={skills} />
+				</section>
 
-			{/* Projects */}
-			<section id="projects" className="snap-start">
-				<Projects projects={projects} />
-			</section>
+				{/* Projects */}
+				<section id="projects" className="snap-start">
+					<Projects projects={projects} />
+				</section>
 
-			{/* Contact */}
-			<section id="contact" className="snap-start">
-				<ContactMe />
-			</section>
+				{/* Contact */}
+				<section id="contact" className="snap-start">
+					<ContactMe />
+				</section>
+			</div>
 		</div>
 	);
 };
