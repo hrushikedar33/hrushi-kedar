@@ -1,5 +1,5 @@
 import React from "react";
-import { keyFor, SocialIcon } from "react-social-Icons";
+import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 import { Social } from "../typings";
 import Link from "next/link";
