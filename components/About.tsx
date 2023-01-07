@@ -17,13 +17,11 @@ const About = ({ homePage }: Props) => {
 				opacity: 1,
 			}}
 			transition={{ duration: 1.5 }}
-			className="flex flex-col min-h-screen text-center items-center justify-center mx-5 md:mx-20"
+			className="sectionPage"
 		>
-			<h3 className="uppercase md:mt-5 tracking-[20px] text-gray-500 text-2xl">
-				about
-			</h3>
+			<h3 className="titleText md:mt-5">about</h3>
 
-			<div className="flex flex-col text-center md:text-left md:flex-row justify-evenly items-center lg:mx-32 space-x-5">
+			<div className="flex flex-col text-center md:text-left md:flex-row justify-evenly items-center lg:mx-32 md:space-x-5">
 				<motion.img
 					initial={{
 						x: -200,

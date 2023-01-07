@@ -18,7 +18,7 @@ const Hero = ({ homePage }: Props) => {
 	});
 
 	return (
-		<div className="flex flex-col min-h-screen items-center justify-center text-center mx-5 md:mx-20">
+		<div className="sectionPage">
 			{/* <BackgroudCircles /> */}
 			{/* //TODO: Add a background image */}
 			<Image
@@ -28,7 +28,7 @@ const Hero = ({ homePage }: Props) => {
 				height={250}
 				width={250}
 			/>
-			<div className="p-5 z-20">
+			<div className="md:p-5 z-20">
 				<h1 className="mt-2 text-3xl uppercase md:text-5xl font-semibold tracking-wide">
 					{homePage.name}
 				</h1>
@@ -40,11 +40,11 @@ const Hero = ({ homePage }: Props) => {
 					<span className="mr-3">{text}</span>
 					<Cursor />
 				</h2>
-				<div className="mt-5 mb-20 space-x-2">
+				<div className="mt-5 md:mb-20 space-x-2">
 					<Link href="#about">
 						<button className="heroButton">About</button>
 					</Link>
-					<Link href="#experiance">
+					<Link href="#experiances">
 						<button className="heroButton">Experiances</button>
 					</Link>
 					<Link href="#skills">

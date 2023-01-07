@@ -4,11 +4,21 @@
 
 body {
 	@apply bg-gray-900 text-white;
+
+	@apply scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80;
 }
 
 @layer components {
+	.sectionPage {
+		@apply flex flex-col min-h-screen items-center justify-center mx-5 md:mx-20 text-center;
+	}
+
 	.heroButton {
-		@apply px-2 py-2 border border-[#242424] rounded-full uppercase text-xs tracking-widest text-gray-400 transition-all hover:border-[#F7AB0A]/40  hover:text-[#F7AB0A]/40;
+		@apply px-2 py-2 border border-[#242424] rounded-full uppercase text-xs tracking-widest text-gray-400 transition-all hover:border-[#F7AB0A]/40 hover:text-[#F7AB0A]/40;
+	}
+
+	.titleText {
+		@apply uppercase tracking-[20px] text-gray-500 text-2xl;
 	}
 
 	.contactInput {

@@ -10,7 +10,7 @@ type Props = {
 
 const Header = ({ socials }: Props) => {
 	return (
-		<header className="flex flex-row sticky top-0 p-5 items-center justify-between z-20 mx-5 md:mx-20">
+		<header className="flex flex-row sticky top-0 p-5 items-center justify-between z-20 md:mx-20">
 			<motion.div
 				initial={{
 					opacity: 0,
@@ -49,17 +49,13 @@ const Header = ({ socials }: Props) => {
 				className="flex flex-row items-center text-gray-300 cursor-pointer"
 			>
 				<div>
-					<Link href={"https://mailto:hrushikedar33@gmail.com"}>
-						<div>
-							<SocialIcon
-								className="cursor-pointer"
-								network="email"
-								fgColor="grey"
-								bgColor="transparent"
-							/>
-							<p className="uppercase hidden md:inline-flex text-sm font-semibold text-gray-400">
-								{"Lets Talk"}
-							</p>
+					<Link
+						href={
+							"https://drive.google.com/file/d/1YYbgYXQsVuvGwOJLak3sxVnoDxHaLxY2/view?usp=share_link"
+						}
+					>
+						<div className="heroButton uppercase text-sm font-semibold tracking-wider text-gray-400">
+							{"Resume"}
 						</div>
 					</Link>
 				</div>

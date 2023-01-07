@@ -14,7 +14,7 @@ const SkillCard = ({ direcrionLeft, skillType }: Props) => {
 			<motion.img
 				initial={{
 					opacity: 0,
-					x: direcrionLeft ? -200 : 200,
+					// x: direcrionLeft ? -200 : 200,
 				}}
 				transition={{ opacity: 1 }}
 				whileInView={{ opacity: 1, x: 0 }}

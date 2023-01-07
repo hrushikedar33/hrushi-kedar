@@ -27,13 +27,11 @@ const ContactMe = (props: Props) => {
 				opacity: 1,
 			}}
 			transition={{ duration: 1.5 }}
-			className="flex flex-col min-h-screen text-center items-center justify-center mx-5 md:mx-20"
+			className="sectionPage"
 		>
-			<h3 className="uppercase tracking-[20px] text-gray-500 text-2xl">
-				Contact
-			</h3>
+			<h3 className="titleText">Contact</h3>
 
-			<div className="flex flex-col mt-10 lg:mt-16">
+			<div className="mt-10 lg:mt-16">
 				<h4 className="text-2xl font-semibold underline decoration-[#F7AB0A]/50">
 					Lets Talk!
 				</h4>
@@ -49,9 +47,9 @@ const ContactMe = (props: Props) => {
 
 				<form
 					onSubmit={handleSubmit(onSubmit)}
-					className="flex flex-col space-y-3 w-fit mx-auto"
+					className="flex flex-col space-y-2"
 				>
-					<div className="flex space-x-2">
+					<div className="grid grid-cols-2 gap-2">
 						<input
 							{...register("name")}
 							placeholder="Name"
@@ -78,7 +76,7 @@ const ContactMe = (props: Props) => {
 					></textarea>
 					<button
 						type="submit"
-						className="py-3 px-10 bg-[#F7AB0A] rounded-md text-black font-bold text-lg"
+						className="py-3 bg-[#F7AB0A] rounded-md text-black font-bold text-lg"
 					>
 						Submit
 					</button>
