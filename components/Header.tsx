@@ -51,7 +51,7 @@ const Header = ({ socials }: Props) => {
 				<div>
 					<Link
 						href={
-							"https://drive.google.com/file/d/1YYbgYXQsVuvGwOJLak3sxVnoDxHaLxY2/view?usp=share_link"
+							"https://drive.google.com/file/d/1_SjxFzjlwc19cCiMjt2lE5dsdHqUPnM7/view?usp=share_link"
 						}
 					>
 						<div className="heroButton uppercase text-sm font-semibold tracking-wider text-gray-400">
